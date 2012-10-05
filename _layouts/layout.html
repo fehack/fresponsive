@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+
+	<!-- Meta -->
+	<meta charset="utf-8" />
+	<title>{% if page.title %} {{ page.title }} | {% endif %} Fresponsive</title>
+	<meta name="description" content="{{ page.meta-description }}" />
+	<meta name="author" content="fehack" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/styles/all.css" />
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+	{% include header.html %}
+
+	<div class="body">
+		{{ content }}
+	</div>
+
+	{% include footer.html %}
+
+</div><!-- .wrapper -->
+
+<script src="/scripts/zepto.js"></script>
+<script src="/scripts/app.js"></script>
+
+</body>
+</html>
