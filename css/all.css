@@ -176,6 +176,20 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+::selection {
+  text-shadow: none;
+}
+img::selection {
+  background: transparent;
+}
+img {
+  max-width: 100%;
+}
 @media screen and (min-width: 40em) {
   body:after {
     content: 'tablet';

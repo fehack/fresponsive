@@ -1,0 +1,25 @@
+//-----------------------------------------------------------------------------
+//	GLOBAL
+//-----------------------------------------------------------------------------
+
+// include paddings and borders inside the box
+* {
+	box-sizing: border-box;
+}
+
+// text seletion color
+::selection {
+	// background: #f56906;
+	// color: #fefff8;
+	text-shadow: none;
+}
+
+// disable selection on images
+img::selection {
+	background: transparent;
+}
+
+// responsive images
+img {
+	max-width: 100%;
+}
