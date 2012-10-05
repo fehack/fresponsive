@@ -4,7 +4,7 @@ auto: false # watch project and auto-compile
 # Stylus Converter Plugin for Jekyll
 stylus:
   compress: true
-  path: ./styles/
+  path: ./css/
 
 # Permalnks Structure
 # permalink: /year/month/day/title.html
