@@ -190,6 +190,9 @@ img::selection {
 img {
   max-width: 100%;
 }
+body {
+  font-size: 1.3rem;
+}
 @media screen and (min-width: 40em) {
   body:after {
     content: 'tablet';

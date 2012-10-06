@@ -1,0 +1,15 @@
+@media screen and (min-width: 40em) {
+  body:after {
+    content: 'tablet';
+    display: none;
+  }
+  body {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 60em) {
+  body:after {
+    content: 'desktop';
+    display: none;
+  }
+}

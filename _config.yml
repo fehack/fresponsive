@@ -1,6 +1,0 @@
-# Yekull Server Configuration
-auto: true # watch project and auto-compile
-
-# Permalnks Structure
-# permalink: /year/month/day/title.html
-# permalink: /title.html
