@@ -1,4 +1,0 @@
-Fehack
-===========
-
-Responsive experiments
