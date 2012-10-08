@@ -1,5 +1,5 @@
 //-----------------------------------------------------------------------------
-// Conditional CSS - http://adactio.com/journal/5429/
+// Conditional Content Loading with JavaScript (http://adactio.com/journal/5429/)
 //-----------------------------------------------------------------------------
 
 var screenSize = window.getComputedStyle(document.body,':after').getPropertyValue('content');
@@ -18,29 +18,29 @@ if (screenSize == 'desktop') {
 // SHOW DRILL
 //-----------------------------------------------------------------------------
 
-(function ($) {
-	var $sw = $('.wrapper');
+// (function ($) {
+// 	var $sw = $('.wrapper');
 
-	$sw.on('drag', function (event) {
-	    event.preventDefault();
+// 	$sw.on('drag', function (event) {
+// 	    event.preventDefault();
 
-	    switch(event.direction){
+// 	    switch(event.direction){
 
-	        case "right":
-	            $('aside').addClass("drill");
-	            break;
-			case "left":
-	            $('aside').removeClass("drill");
-	            break;
-			case "up":
-	            $('aside').removeClass("drill");
-	            break;
-			case "down":
-	            $('aside').removeClass("drill");
-	            break;
-	    }
-	});
-}(jQuery));
+// 	        case "right":
+// 	            $('aside').addClass("drill");
+// 	            break;
+// 			case "left":
+// 	            $('aside').removeClass("drill");
+// 	            break;
+// 			case "up":
+// 	            $('aside').removeClass("drill");
+// 	            break;
+// 			case "down":
+// 	            $('aside').removeClass("drill");
+// 	            break;
+// 	    }
+// 	});
+// }(jQuery));
 
 
 //-----------------------------------------------------------------------------
