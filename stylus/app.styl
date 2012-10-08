@@ -353,7 +353,33 @@ input[type="text"]:focus {
 
 	input {
 		@extend input;
-		margin-top:1rem;
+		margin-bottom:1rem;
+	}
+
+		dl {
+		display:block;
+		overflow:hidden;
+	}
+
+	dt {
+		color:#999;
+		min-width:115px;
+		float:left;
+		clear:left;
+	}
+
+	dd {
+		overflow:hidden;
+		margin-bottom:2rem;
+
+		span {
+			line-height:1.6;
+		}
+
+		.block {
+			display:block;
+		}
+
 	}
 
 }
