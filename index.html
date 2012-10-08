@@ -15,7 +15,7 @@
 
 </head>
 
-<body>
+<body class="body-search">
 
 <div class="wrapper">
 
@@ -58,42 +58,42 @@
 
 		</div>
 
+		<aside class="drill" id="drill" role="complementary">
+			<form action="#">
+				<input type="text" placeholder="e.g. BMW M3 2012" />
+
+				<select name="select-make" id="select-make">
+					<option value="Make">Make</option>
+					<option value="BMW">BMW</option>
+					<option value="Mustang">Mustang</option>
+					<option value="Toyota">Toyota</option>
+				</select>
+
+				<select name="select-model" id="select-model">
+					<option value="A1">A1</option>
+					<option value="A2">A2</option>
+					<option value="A3">A3</option>
+					<option value="A4">A4</option>
+				</select>
+
+				<fieldset>
+					<legend>Price Range</legend>
+					<input type="range" />
+				</fieldset>
+
+				<fieldset>
+					<legend>Year Range</legend>
+					<input type="range" />
+				</fieldset>
+
+				<fieldset>
+					<legend>Mileage Range</legend>
+					<input type="range" />
+				</fieldset>
+			</form>
+		</aside>
+
 	</div>
-
-	<aside class="drill" role="complementary">
-		<form action="#">
-			<input type="text" placeholder="e.g. BMW M3 2012" />
-
-			<select name="select-make" id="select-make">
-				<option value="Make">Make</option>
-				<option value="BMW">BMW</option>
-				<option value="Mustang">Mustang</option>
-				<option value="Toyota">Toyota</option>
-			</select>
-
-			<select name="select-model" id="select-model">
-				<option value="A1">A1</option>
-				<option value="A2">A2</option>
-				<option value="A3">A3</option>
-				<option value="A4">A4</option>
-			</select>
-
-			<fieldset>
-				<legend>Price Range</legend>
-				<input type="range" />
-			</fieldset>
-
-			<fieldset>
-				<legend>Year Range</legend>
-				<input type="range" />
-			</fieldset>
-
-			<fieldset>
-				<legend>Mileage Range</legend>
-				<input type="range" />
-			</fieldset>
-		</form>
-	</aside>
 
 	<footer class="footer" role="contentinfo">
 		<p><small></small></p>
