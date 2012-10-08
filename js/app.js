@@ -56,7 +56,6 @@ $(document).ready(function() {
 
 // slider
 var slider = new Swipe(document.getElementById('slider'), {
-    speed: 400,
 	callback: function(e, pos) {
 		var i = bullets.length;
 		while (i--) {
