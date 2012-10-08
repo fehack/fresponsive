@@ -43,6 +43,12 @@ if (screenSize == 'desktop') {
 // }(jQuery));
 
 
+$(document).ready(function() {
+	$('a.colapse').click(function() {
+     	$(this).next('.details').slideToggle("slow");
+	});
+});
+
 //-----------------------------------------------------------------------------
 //	 SLIDESHOW
 //-----------------------------------------------------------------------------
