@@ -36,6 +36,12 @@ img {
 	max-width: 100%;
 }
 
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
 //-----------------------------------------------------------------------------
 //	HEADER
 //-----------------------------------------------------------------------------
@@ -60,6 +66,19 @@ img {
 
 .drill {
 	background: url("../img/bg-pattern-blue2.png");
+	padding: 1rem;
+
+	input, select {
+		display: inline-block;
+		min-width: 100%;
+		margin-bottom: 2rem;
+	}
+
+	legend {
+		text-align: center;
+		color: #fff;
+		font-size: 1.4rem;
+	}
 }
 
 //-----------------------------------------------------------------------------
@@ -98,31 +117,31 @@ img {
 		font-weight: normal;
 	}
 
-	.listing img {
+	img {
 		display: block;
 	}
 }
 
-aside {
-	position: relative;
-	margin-left:-20%;
-	width:20%;
-	display:block;
-	float:left;
-}
+// aside {
+// 	position: relative;
+// 	margin-left:-20%;
+// 	width:20%;
+// 	display:block;
+// 	float:left;
+// }
 
-aside.drill {
-	position: relative;
-	margin-left:0%;
-	width:20%;
-	display:block;
-	float:left;
-	-webkit-transition: all 0.1s linear;
-	-moz-transition: all 0.1s linear;
-	-o-transition: all 0.1s linear;
-	-ms-transition: all 0.1s linear;
-	transition: all 0.1s linear;
-}
+// aside.drill {
+// 	position: relative;
+// 	margin-left:0%;
+// 	width:20%;
+// 	display:block;
+// 	float:left;
+// 	-webkit-transition: all 0.1s linear;
+// 	-moz-transition: all 0.1s linear;
+// 	-o-transition: all 0.1s linear;
+// 	-ms-transition: all 0.1s linear;
+// 	transition: all 0.1s linear;
+// }
 
 //-----------------------------------------------------------------------------
 //	DETAILS
