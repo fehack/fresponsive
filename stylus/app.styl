@@ -115,17 +115,106 @@ aside.drill {
 	transition: all 0.1s linear;
 }
 
-.swipe {
-
+/*
+	Gallery
+ */
+#gallery {
+	background: black;
+	padding: 1rem;
+	position:relative;
 }
+
+.swipe,
+.swipe ul,
+.swipe ul li {
+	padding: 0;
+	margin: 0;
+}
+
 .swipe li div {
-  margin:0 10px;
-  padding:50px 10px;
-  background:black;
-  font-weight:bold;
-  color:#fff;
-  font-size:20px;
-  text-align:center;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.controls {
+	border-top: 1px #3A4146 solid;
+	background: -webkit-gradient(linear, left top, left bottom, from(#292F34), to(#23282C));
+	background: -webkit-linear-gradient(top, #292F34, #23282C);
+	background: -moz-linear-gradient(top, #292F34, #23282C);
+	background: -ms-linear-gradient(top, #292F34, #23282C);
+	background: -o-linear-gradient(top, #292F34, #23282C);
+	background: linear-gradient(top, #292F34, #23282C);
+	height: 35px;
+	position: relative;
+	bottom:0px;
+	border-radius: 5px;
+}
+
+.prev {
+	border-right: 1px #232628 solid;
+	display: inline-block;
+	text-decoration: none;
+	position:absolute;
+	left: 0;
+	top: 0;
+}
+
+.prev em {
+	display: block;
+	border-right: 1px #30373C solid;
+	padding: 10px 13px 8px;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 11px;
+	text-transform: uppercase;
+	color: #697279;
+	letter-spacing: 1px;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, .35);
+}
+
+.next {
+	border-left: 1px #232628 solid;
+	display: inline-block;
+	text-decoration: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.next em {
+	display: block;
+	border-left: 1px #30373C solid;
+	padding: 10px 13px 8px;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 11px;
+	text-transform: uppercase;
+	color: #697279;
+	letter-spacing: 1px;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, .35);
+}
+
+.current-slide {
+	text-align: center;
+	font-size: 2rem;
+	line-height: 1.3;
+	color: #697279;
+	display: block;
+	position: relative;
+	top: 0.5rem;
+	left: 50%;
+	margin-left: -75px;
+	width: 150px;
+}
+
+.current-slide em {
+	display: inline-block;
+	font-style: normal;
+}
+
+.current-slide em.on {
+	color: white;
 }
 
 
