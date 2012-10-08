@@ -273,14 +273,15 @@ input[type="text"]:focus {
 }
 
 .section {
-	padding:1rem 1rem 2rem 1rem;
+	padding:1rem;
 	margin:1rem 0;
 	box-shadow:0 0.2rem 0.6rem #999;
+	position:relative;
 
 	h2 {
 		color:#669900;
 		text-shadow: 0 0.1rem 0 white;
-		margin:0 0 0.5rem 0;
+		margin:0;
 	}
 
 	h3 {
@@ -294,6 +295,25 @@ input[type="text"]:focus {
 		font-size:1.2rem;
 		font-weight:normal;
 		padding:0.3rem 0.7rem 0.2rem 0.7rem;
+	}
+
+	.colapse {
+		background: url('../img/arrow_down.png') 50% 50% no-repeat;
+		width: 10px;
+		height: 10px;
+		text-indent: -9999px;
+		position: absolute;
+		right: 10px;
+		top: 10px;
+	}
+
+	.details {
+		margin:1rem 0;
+	}
+
+	input {
+		@extend input;
+		margin-top:1rem;
 	}
 
 }
