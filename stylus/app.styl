@@ -2,6 +2,16 @@
 //	GLOBAL
 //-----------------------------------------------------------------------------
 
+html {
+	font-size: 62.5%; // 10px – for easier `rem` calculations
+}
+
+body {
+	font-size: 1.3rem;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background: url("../img/bg-pattern-gray.png");
+}
+
 // Conditional Content Loading with JavaScript (http://adactio.com/journal/5429/)
 body:after {
 	content: 'mobile';
@@ -24,14 +34,6 @@ img::selection {
 
 img {
 	max-width: 100%;
-}
-
-html {
-	font-size: 62.5%; // 10px – for easier `rem` calculations
-}
-
-body {
-	font-size: 1.3rem;
 }
 
 //-----------------------------------------------------------------------------
@@ -223,3 +225,7 @@ aside.drill {
 //-----------------------------------------------------------------------------
 //	FOOTER
 //-----------------------------------------------------------------------------
+
+.footer {
+	padding: 0 1rem;
+}
