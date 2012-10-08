@@ -63,14 +63,22 @@ input[type="text"]:focus {
 }
 
 //-----------------------------------------------------------------------------
+//	LAYOUT
+//-----------------------------------------------------------------------------
+
+.main {
+	position: relative;
+	overflow: hidden;
+}
+
+//-----------------------------------------------------------------------------
 //	HEADER
 //-----------------------------------------------------------------------------
 
 .header {
 	background: url("../img/bg-pattern-blue.png");
 	text-align: center;
-	height: 5rem;
-	line-height: 5rem;
+	padding: 1rem;
 
 	a {
 		color: #fff;
@@ -80,6 +88,14 @@ input[type="text"]:focus {
 	}
 }
 
+.toggle-drill {
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 1rem;
+	background: url("../img/bg-pattern-blue2.png");
+}
+
 //-----------------------------------------------------------------------------
 //	DRILL
 //-----------------------------------------------------------------------------
@@ -87,6 +103,7 @@ input[type="text"]:focus {
 .drill {
 	background: url("../img/bg-pattern-blue2.png");
 	padding: 1rem;
+	box-shadow: inset -5px 0px 5px rgba(0, 0, 0, 0.1);
 
 	input, select {
 		display: inline-block;
