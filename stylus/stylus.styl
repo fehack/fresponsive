@@ -2,10 +2,20 @@
 //	Transparent Mixins
 //-----------------------------------------------------------------------------
 
+vendor(prop, args) {
+	-webkit-{prop}: args;
+	-moz-{prop}: args;
+	-ms-{prop}: args;
+	-o-{prop}: args;
+	{prop}: args;
+}
+
+// border-radius()
+// 	vendor('border-radius', arguments)
+
+
 border-radius() {
-	-webkit-border-radius: arguments;
-	   -moz-border-radius: arguments;
-			border-radius: arguments;
+	vendor('border-radius', arguments)
 }
 
 box-shadow() {
@@ -50,11 +60,12 @@ column-count() {
 			column-count: arguments;
 }
 
-linear-gradient() {
-	-webkit-linear-gradient: arguments;
-	   -moz-linear-gradient: arguments;
-		-ms-linear-gradient: arguments;
-			linear-gradient: arguments;
+background-image() {
+	vendor('background-image', arguments);
+}
+
+background() {
+	vendor('background', arguments);
 }
 
 //-----------------------------------------------------------------------------
