@@ -48,11 +48,15 @@ if (screenSize == 'desktop') {
 //-----------------------------------------------------------------------------
 
 
+// slider
 var slider = new Swipe(document.getElementById('slider'), {
     speed: 400,
-    callback: function(event, index, elem) {
-
-      // do something cool
-
-    }
-});
+	callback: function(e, pos) {
+		var i = bullets.length;
+		while (i--) {
+			bullets[i].className = ' ';
+		}
+		bullets[pos].className = 'on';
+	}
+}),
+bullets = document.getElementById('current-slide').getElementsByTagName('em');
