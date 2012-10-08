@@ -104,6 +104,7 @@ input[type="text"]:focus {
 	background: url("../img/bg-pattern-blue2.png");
 	padding: 1rem;
 	box-shadow: inset -5px 0px 5px rgba(0, 0, 0, 0.1);
+	display:none;
 
 	input, select {
 		display: inline-block;
@@ -158,6 +159,14 @@ input[type="text"]:focus {
 	}
 }
 
+.drill-min {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 90%;
+}
+
+
 //-----------------------------------------------------------------------------
 //	SRP
 //-----------------------------------------------------------------------------
@@ -177,6 +186,13 @@ input[type="text"]:focus {
 
 .listings {
 	padding: 1rem;
+}
+
+.listings.listing-min {
+	position: absolute;
+	left: 90%;
+	top: 0px;
+	width: 100%;
 }
 
 .listing {

@@ -47,6 +47,14 @@ $(document).ready(function() {
 	$('a.colapse').click(function() {
      	$(this).next('.details').slideToggle("slow");
 	});
+
+	var equalHeight = $(document).height();
+
+	$('a.toggle-drill').click(function() {
+		$('.drill').show();
+		$('.drill').toggleClass('drill-min').height(equalHeight);
+		$('.listings').toggleClass('listing-min').height(equalHeight);
+	});
 });
 
 //-----------------------------------------------------------------------------
